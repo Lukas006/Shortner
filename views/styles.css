@@ -1,0 +1,131 @@
+:root {
+--primary: #0a0a0a;
+--secondary: rgba(255, 255, 255, 0.05);
+--accent: #00d8ff;
+--text-light: #ffffff;
+--text-muted: #b0b0b5;
+--glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Helvetica Neue', Arial, sans-serif;
+background: linear-gradient(to bottom, var(--primary), #1a1a1a);
+color: var(--text-light);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+overflow: hidden;
+}
+
+.container {
+background: var(--secondary);
+border-radius: 16px;
+padding: 2.5rem;
+width: 100%;
+max-width: 450px;
+text-align: center;
+box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+backdrop-filter: blur(15px);
+border: 1px solid var(--glass-border);
+}
+
+header h1 {
+font-size: 2.2rem;
+color: var(--accent);
+margin-bottom: 0.5rem;
+}
+
+header p {
+font-size: 1.1rem;
+color: var(--text-muted);
+}
+
+form {
+margin: 2.5rem 0;
+display: flex;
+gap: 0.75rem;
+}
+
+input[type="url"] {
+flex: 1;
+padding: 1rem;
+border: 1px solid var(--glass-border);
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.02);
+color: var(--text-light);
+font-size: 1rem;
+transition: border-color 0.3s;
+}
+
+input[type="url"]:focus {
+outline: none;
+border-color: var(--accent);
+}
+
+button {
+padding: 1rem 2rem;
+background: var(--accent);
+border: none;
+border-radius: 10px;
+color: var(--primary);
+font-weight: bold;
+cursor: pointer;
+transition: background 0.3s, transform 0.2s;
+font-size: 1rem;
+}
+
+button:hover {
+background: #00a0b8;
+transform: scale(1.05);
+}
+
+#result {
+margin-top: 2rem;
+padding: 1.2rem;
+background: rgba(255, 255, 255, 0.02);
+border: 1px solid var(--glass-border);
+border-radius: 10px;
+font-size: 1rem;
+}
+
+.hidden {
+display: none;
+}
+
+footer {
+margin-top: 2.5rem;
+font-size: 0.9rem;
+color: var(--text-muted);
+}
+
+table {
+width: 100%;
+margin-top: 20px;
+border-collapse: collapse;
+background: var(--primary);
+color: var(--text-light);
+border: 1px solid var(--accent);
+border-radius: 8px;
+}
+
+th, td {
+padding: 10px;
+text-align: left;
+border: 1px solid var(--accent);
+}
+
+th {
+background: var(--secondary);
+color: var(--accent);
+}
+
+.hidden {
+display: none;
+}
